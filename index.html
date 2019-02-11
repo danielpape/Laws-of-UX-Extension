@@ -1,0 +1,122 @@
+<html>
+   <head>
+      <title>Laws of UX</title>
+      <link rel="shortcut icon" href="icon128.png" />
+      <style>
+      *,
+      *::before,
+      *::after {
+        margin:0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+
+      html {
+        font-size:62.5%;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        color: $color-grey-dark;
+        box-sizing:border-box;
+        background-color: #222;
+        color: #f4f1d0;
+      }
+         .title {
+         font-size:6.4rem;
+         margin-bottom: 3.2rem;
+         }
+         .overview {
+         font-size:4.8rem;
+         font-weight: 300;
+         opacity: 0.8;
+         }
+         #card {
+         margin-top:5%;
+         height: 80vh;
+         width: 50vh;
+         margin-left:auto;
+         margin-right:auto;
+         background-color: #333;
+         box-shadow: 0 10px 20px rgba(0,0,0,.5);
+         border-radius:3.2rem;
+         padding: 4.8rem;
+       }
+
+       svg {
+         width:6.4rem;
+         height:6.4rem;
+         fill: #f4f1d0;
+         margin-bottom: 1.6rem;
+       }
+       .btn {
+  position: relative;
+  font-size:3.2rem;
+  display: block;
+  margin: 30px auto;
+  padding: 0;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+  background-color: #2ecc71;
+  color: #ecf0f1;
+
+  transition: background-color .3s;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #27ae60;
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn span {
+  display: block;
+  padding: 12px 24px;
+}
+
+.btn:before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 0;
+  padding-top: 0;
+
+  border-radius: 100%;
+
+  background-color: rgba(236, 240, 241, .3);
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+      </style>
+   </head>
+   <body>
+      <div id="card"></div>
+      <div id="deal-me-another"><button class="btn" type="button" onclick="generateLaw()"><span>Hit me</span></button></div>
+   </body>
+   <script src="script.js"></script>
+</html>
