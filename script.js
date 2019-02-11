@@ -90,7 +90,4 @@ document.getElementById('card').innerHTML = '<svg viewBox="0 0 40 40" id="logo" 
 
 document.addEventListener('DOMContentLoaded', function () {
   generateLaw();
-  button.addEventListener("click", function() {
-    generateLaw();
-  }, false);
 });
