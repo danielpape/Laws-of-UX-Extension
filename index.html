@@ -1,63 +1,11 @@
 <html>
    <head>
       <title>Laws of UX</title>
-      <style>
-      *,
-      *::before,
-      *::after {
-        margin:0;
-        padding: 0;
-        box-sizing: inherit;
-      }
-
-      html {
-        font-size:62.5%;
-      }
-
-      body {
-        font-family: sans-serif;
-        font-weight: 400;
-        line-height: 1.4;
-        color: $color-grey-dark;
-        box-sizing:border-box;
-        background-color: #222;
-        color: #f4f1d0;
-      }
-         .title {
-           font-size: 2.4rem;
-           margin-bottom: 4.8rem;
-           text-transform: uppercase;
-           letter-spacing: 4px;
-         }
-         .overview {
-           font-size: 5.6rem;
-         font-weight: 300;
-         opacity: 0.8;
-         line-height: 1.2;
-         letter-spacing: 2px;
-         }
-         #card {
-         margin-top:5%;
-         height: 80vh;
-         width: 50vh;
-         margin-left:auto;
-         margin-right:auto;
-         background-color: #333;
-         box-shadow: 0 12px 48px rgba(0,0,0,.5);
-         border-radius:3.2rem;
-         padding: 4.8rem;
-       }
-
-       svg {
-         width:6.4rem;
-         height:6.4rem;
-         fill: #f4f1d0;
-         margin-bottom: 1.6rem;
-       }
-      </style>
+      <link rel = "stylesheet" type = "text/css" href = "style.css" />
    </head>
    <body>
-      <div id="card"></div>
+      <div id="card" class="card-animated"></div>
+      <div id="loadMore"><button class="btn loadMoreBtn" id="deal-me-another-button">Load more</div>
    </body>
    <script src="script.js"></script>
 </html>
